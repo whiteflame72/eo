@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.CdCollegeType" table="cd_college_type">
+        <id name="cdCollegeTypeId" type="long" column="COLLEGE_TYPE_ID">
+            <generator class="native" />
+        </id>
+        <property name="collegeTypeDesc" column="COLLEGE_TYPE_DESC" length="45" not-null="true" />
+        <property name="collegeGpa" type="big_decimal" column="COLLEGE_GPA" precision="4" not-null="true" />
+        <property name="collegeSat" type="short" column="COLLEGE_SAT" not-null="true" />
+        <property name="collegeAct" type="short" column="COLLEGE_ACT" not-null="true" />
+    </class>
+</hibernate-mapping>

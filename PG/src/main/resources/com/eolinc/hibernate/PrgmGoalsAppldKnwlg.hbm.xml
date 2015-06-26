@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.PrgmGoalsAppldKnwlg" table="prgm_goals_appid_knwlg">
+        <id name="prgmGoalsAppldKnwlgId" type="long" column="RESPONDENT_ID">
+            <generator class="native" />
+        </id>
+        <property name="appliesKnowledgeRealWorld" type="short" column="APPLIES_KNOWLEDGE_REAL_WORLD" not-null="true" />
+        <property name="solvesIntegratedProblems" type="short" column="SOLVES_INTEGRATED_PROBLEMS" not-null="true" />
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.ProfileDetails" table="profile_details">
+        <id name="profileDetailsId" type="long" column="PROFILE_ID" >
+            <generator class="assigned" />
+        </id>
+        <property name="sessnLngthMin" type="byte" column="SESSN_LNGTH_MIN" not-null="true" />
+        <property name="sessnLngthMax" type="byte" column="SESSN_LNGTH_MAX" not-null="true" />
+        <property name="grade" column="GRADE" length="2" not-null="true" />
+        <property name="addedDt" type="date" column="ADDED_DT" length="10" not-null="true" />
+        <property name="addedBy" column="ADDED_BY" length="20" not-null="true" />
+        <property name="updtDt" type="date" column="UPDT_DT" length="10" not-null="true" />
+        <property name="updtBy" column="UPDT_BY" length="20" not-null="true" />
+ 
+    </class>
+</hibernate-mapping>

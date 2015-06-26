@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence ">
+	<persistence-unit name="eol2" transaction-type="RESOURCE_LOCAL">
+			<provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+			<properties>
+				<property name="hibernate.cache.provider_class" value="org.hibernate.cache.HashtableCacheProvider" />
+			</properties>
+
+	</persistence-unit>
+
+</persistence>   

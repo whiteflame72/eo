@@ -1,0 +1,587 @@
+* {
+	margin: 0;
+	padding: 0.5;
+	border-color: #000000;
+	border-left-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-top-color: #000000;
+}
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+.clear {
+	clear: both;
+	font-size: 0%;
+	line-height: 0%;
+	height: 0;
+}
+
+input, select {
+	vertical-align: middle;
+	font-weight: normal;
+}
+
+img {
+	border: 0;
+	vertical-align: top;
+	text-align: center;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	background: #fdfdfd url(images/eol/body-tail.jpg) repeat-x 0% 0%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 2em;
+	color: #000000;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 2m;
+	color: #000099;
+}
+
+h4 {
+	font-size: 1em;
+	line-height: 2em;
+	color: #000099;
+}
+
+.fleft {
+	float: left;
+}
+
+img.fleft {
+	float: left;
+	margin: 0 20px 26px 0;
+}
+
+img.fleft1 {
+	float: left;
+	margin: -3px 39px 20px -1px;
+}
+
+.fright {
+	float: right;
+}
+
+.col-1, .col-2, .col-3, .col-4 {
+	float: left;
+	overflow: hidden;
+}
+
+#header {
+	background: url(images/eol/header.jpg) no-repeat 0% 0%;
+	width: 980px;
+	height: 325px;
+	margin: 0 auto;
+	position: relative;
+	font-size: 0.75em;
+}
+
+#header ul {
+	position: absolute;
+	top: 61px;
+	left: 1px;
+	width: 738px;
+	height: 32px;
+}
+
+#header ul li {
+	float: left;
+	font-weight: bold;
+	color: #5d5d5e;
+}
+
+#header ul li a {
+	display: inline-block;
+	height: 44px;
+	padding: 0 20px 0 20px;
+	line-height: 37px;
+	text-decoration: none;
+	color: #5d5d5e;
+}
+
+#header ul li a:hover {
+	background: url(images/eol/menu-tail.jpg) repeat-x 0% 0%;
+	display: inline-block;
+	padding: 0;
+	cursor: pointer;
+	text-decoration: none;
+	color: #005fa7;
+}
+
+#header ul li a:hover span {
+	background: url(images/eol/menu-left.jpg) no-repeat 0% 0%;
+	display: inline-block;
+}
+
+#header ul li a:hover span span {
+	background: url(images/eol/menu-right.jpg) no-repeat 100% 0%;
+	display: inline-block;
+	height: 44px;
+	padding: 0 20px 0 20px;
+	line-height: 37px;
+}
+
+#menu-act a {
+	background: url(images/eol/menu-tail.jpg) repeat-x 0% 0%;
+	display: inline-block;
+	padding: 0 !important;
+	cursor: pointer;
+	text-decoration: none;
+	color: #005fa7 !important;
+}
+
+#menu-act a span {
+	background: url(images/eol/menu-left.jpg) no-repeat 0% 0%;
+	display: inline-block;
+}
+
+#menu-act a span span {
+	background: url(images/eol/menu-right.jpg) no-repeat 100% 0%;
+	display: inline-block;
+	height: 44px;
+	padding: 0 20px 0 20px;
+	line-height: 37px;
+}
+
+#header p {
+	width: 460px;
+	line-height: 1.25em;
+	color: #fff;
+	position: absolute;
+	top: 168px;
+	left: 100px;
+}
+
+#logo {
+	position: absolute;
+	top: 18px;
+	left: 39px;
+	height: 32px;
+}
+
+#slogan {
+	position: absolute;
+	top: 151px;
+	left: 105px;
+}
+
+#content-tail {
+	background: url(images/eol/content-tail.gif) repeat-y 0% 0%;
+	width: 980px;
+	margin: 0 auto;
+}
+
+#content {
+	background: url(images/eol/content-top.jpg) no-repeat 0% 0%;
+	padding: 13px 57px 0 60px;
+	min-height: 300px;
+	height: auto !important;
+	height: 300px;
+	font-size: 0.75em;
+}
+
+#content p {
+	width: 100%;
+	overflow: hidden;
+	padding: 0 0 21px 0;
+	line-height: 2em;
+	background-color: #FFFFFF;
+}
+
+#content p span {
+	display: block;
+}
+
+#content p strong {
+	color: #000;
+}
+
+#content p b {
+	display: block;
+	font-weight: normal;
+	padding: 14px 6px 0 0;
+	text-align: right;
+	color: #000;
+}
+
+#content p.extra-indent {
+	padding: 0 0 18px 0;
+}
+
+#content p.no-indent {
+	padding: 0;
+}
+
+#content p.extra-style {
+	width: auto;
+}
+
+.line-ver {
+	background: url(images/eol/line-ver-tail.gif) repeat-y;
+}
+
+.flags {
+	padding: 0 0 23px 8px;
+}
+
+.flags img {
+	float: left;
+	margin: 0 1px 0 0 !important;
+}
+
+.box {
+	width: auto;
+	overflow: hidden;
+	margin: 0 0 15px 0;
+}
+
+.box .border-top {
+	background: #fff url(images/eol/border-top.jpg) repeat-x 0% 0%;
+}
+
+.box .border-bot {
+	background: url(images/eol/border-bot.jpg) repeat-x 0% 100%;
+}
+
+.box .border-left {
+	background: url(images/eol/border-left.jpg) repeat-y 0% 0%;
+}
+
+.box .border-right {
+	background: url(images/eol/border-right.jpg) repeat-y 100% 0%;
+}
+
+.box .corner-top-left {
+	background: url(images/eol/corner-top-left.jpg) no-repeat 0% 0%;
+}
+
+.box .corner-top-right {
+	background: url(images/eol/corner-top-right.jpg) no-repeat 100% 0%;
+}
+
+.box .corner-bot-left {
+	background: url(images/eol/corner-bot-left.jpg) no-repeat 0% 100%;
+}
+
+.box .corner-bot-right {
+	background: url(images/eol/corner-bot-right.jpg) no-repeat 100% 100%;
+}
+
+.box .box-indent {
+	padding: 0 28px 10px 25px;
+}
+
+.box .box-indent1 {
+	padding: 0 28px 26px 25px;
+}
+
+.box p {
+	width: auto !important;
+	padding: 0 0 17px 3px !important;
+	line-height: 1.583em !important;
+}
+
+.box-1 {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 0 15px 0;
+}
+
+.box-1 .border-top {
+	background: #fff url(images/eol/border-top1.jpg) repeat-x 0% 0%;
+}
+
+.box-1 .border-bot {
+	background: url(images/eol/border-bot1.jpg) repeat-x 0% 100%;
+}
+
+.box-1 .border-left {
+	background: url(images/eol/border-left1.jpg) repeat-y 0% 0%;
+}
+
+.box-1 .border-right {
+	background: url(images/eol/border-right1.jpg) repeat-y 100% 0%;
+}
+
+.box-1 .corner-top-left {
+	background: url(images/eol/corner-top-left1.jpg) no-repeat 0% 0%;
+}
+
+.box-1 .corner-top-right {
+	background: url(images/eol/corner-top-right1.jpg) no-repeat 100% 0%;
+}
+
+.box-1 .corner-bot-left {
+	background: url(images/eol/corner-bot-left1.jpg) no-repeat 0% 100%;
+}
+
+.box-1 .corner-bot-right {
+	background: url(images/eol/corner-bot-right1.jpg) no-repeat 100% 100%;
+}
+
+.box-1 .box-indent {
+	padding: 51px 26px 14px 24px;
+}
+
+.box-1 p {
+	width: auto !important;
+	padding: 0 0 15px 3px !important;
+	line-height: 1.583em !important;
+}
+
+.title {
+	height: 26px;
+	padding: 14px 0 0 2px;
+	margin: 0 0 12px 0;
+}
+
+.title-1 {
+	background: url(images/eol/title-bg.jpg) no-repeat 0% 1px;
+	height: auto;
+	padding: 0 0 6px 31px;
+	margin: 0 0 0 -3px;
+	width: auto;
+}
+
+.title-2 {
+	height: 26px;
+	padding: 14px 0 0 2px;
+	margin: 0 0 28px 0;
+}
+
+.list {
+	padding: 0 0 7px 0;
+}
+
+.list li {
+	background: url(images/eol/marker.gif) no-repeat 0% 11px;
+	padding: 0 0 0 22px;
+	line-height: 2.833em;
+}
+
+.list li a {
+	text-decoration: none;
+	color: #000;
+}
+
+.list li a:hover {
+	color: #0577cf;
+}
+
+.list li.act a {
+	color: #0577cf;
+}
+
+.list-1 {
+	margin: -2px 0 0 0;
+}
+
+.list-1 li {
+	padding: 0 0 11px 0;
+	margin: 0 0 17px 0;
+	font-size: 0.917em;
+	border-bottom: 1px solid #ececec;
+}
+
+.list-1 li span {
+	display: block;
+	font-size: 1.182em;
+}
+
+.list-1 li span a {
+	text-decoration: none;
+	color: #0577cf;
+}
+
+.list-1 li span a:hover {
+	text-decoration: underline;
+}
+
+.link {
+	display: block;
+	float: left;
+	margin: -2px 0 31px -1px;
+	font-size: 0.917em;
+}
+
+.link-1 {
+	background: url(images/eol/link-tail.gif) repeat-x 0% 0%;
+	display: block;
+	float: right;
+	margin: -4px 0 0 0;
+	text-decoration: none;
+	color: #005fa7;
+}
+
+.link-1 span {
+	background: url(images/eol/link-left.gif) no-repeat 0% 0%;
+	display: inline-block !important;
+}
+
+.link-1 span span {
+	background: url(images/eol/link-right.gif) no-repeat 100% 0%;
+	display: inline-block !important;
+	height: 23px;
+	line-height: 21px;
+	padding: 0 20px 0 21px;
+}
+
+.link-1:hover {
+	cursor: pointer;
+	color: #000;
+}
+
+.list-2 {
+	padding: 0 0 20px 0;
+}
+
+.list-2 li {
+	background: url(images/eol/marker1.gif) no-repeat 0% 9px;
+	padding: 0 0 0 25px;
+	line-height: 1.833em;
+}
+
+.list-2 li a {
+	text-decoration: none;
+	color: #0577cf;
+}
+
+.list-2 li a:hover {
+	text-decoration: underline;
+}
+
+.list-indent {
+	padding: 20px 0 0 0;
+}
+
+#subscribe-form {
+	background: url(images/eol/subscribe-bg.jpg) no-repeat 0% 0%;
+	width: 181px;
+	height: 73px;
+	padding: 19px 0 0 20px;
+	margin: 0 0 0 -2px;
+	overflow: hidden;
+}
+
+#subscribe-form img {
+	margin: 0 0 13px 1px;
+}
+
+#subscribe-form input {
+	background: #fff;
+	width: 140px;
+	height: 15px;
+	padding: 2px 3px 2px 3px;
+	float: left;
+	border: 1px solid #d8d8d8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.917em;
+	color: #8a8a8a;
+}
+
+#subscribe-form #subscribe-submit {
+	background: url(images/eol/subscribe-submit.gif) no-repeat 0% 0%;
+	width: 22px;
+	height: 21px;
+	padding: 0;
+	border: none;
+}
+
+.line-hor {
+	background: url(images/eol/line-hor-bg.jpg) no-repeat 0% 0%;
+	width: 611px;
+	height: 1px;
+	margin: 0 auto 37px;
+	overflow: hidden;
+}
+
+.two-blocks {
+	width: 100%;
+	overflow: hidden;
+	padding: 20px 0 0 0;
+}
+
+.left-block {
+	float: left;
+}
+
+.right-block {
+	float: right;
+}
+
+#content-bot {
+	background: url(images/eol/content-bot.gif) no-repeat 0% 0%;
+	width: 980px;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#footer {
+	width: auto;
+	height: 75px;
+	margin: 0 auto;
+	overflow: hidden;
+	font-size: 0.75em;
+	color: #000;
+}
+
+#footer p {
+	padding: 18px 0 0 62px;
+}
+
+#footer p a {
+	margin: 0 0 0 8px;
+	text-decoration: none;
+	color: #000000;
+}
+
+#footer p a:hover {
+	text-decoration: underline;
+}
+
+.formsquare {
+	border: thin solid #0066FF;
+}
+
+#reportsbutton {
+	background: url(/EOLProgramGoals/jsp/images/leftnav/Reports.jpg) no-repeat top left;
+	width:120px;
+	height:40px;
+	border:none;
+	text-indent: -9999px;
+	clear:both;
+}
+
+
+#reportsbutton:hover {
+	background: url(/EOLProgramGoals/jsp/images/leftnav/Reportsblue.jpg) no-repeat top left;
+	text-indent: -9999px;
+	width:120px;
+	height:40px;
+	border:none;
+	clear:both;
+}
+
+
+

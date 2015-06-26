@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database connection settings -->
+    	<property name="connection.useUnicode">true</property> 
+        <property name="connection.characterEncoding">UTF-8</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<!-- Fuaad's DB  
+		<property name="connection.url">jdbc:mysql://192.168.15.254:3306/eolproggoal</property>
+		-->
+		<!-- Local DB
+		-->
+		<property name="connection.url">jdbc:mysql://127.0.0.1:3306/eolproggoal</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">admin</property>
+		<!-- Dev DB
+		<property name="connection.url">jdbc:mysql://192.168.25.200:3306/eoldemo</property>
+		<property name="connection.username">eoldemo</property>
+		<property name="connection.password">TheSecondPass02</property>
+		-->
+		<!-- Dev DB
+		<property name="connection.url">jdbc:mysql://localhost:3306/eoldemo</property>
+		<property name="connection.username">eoldemo</property>
+		<property name="connection.password">eoldemo99</property>
+		-->
+		<!-- JDBC connection pool (use the built-in) -->
+		<property name="connection.pool_size">5</property>
+		<property name="connection.acquire_increment">3</property>
+		<property name="connection.idle_test_period">14400</property>
+		<property name="connection.timeout">86400</property>
+		<property name="connection.max_size">15</property>
+		<property name="connection.min_size">3</property>
+		<property name="connection.max_statements">0</property>
+		<property name="connection.preferredTestQuery">select 1;</property>
+		<property name="connection.maxIdleTime">0</property>
+		<!-- SQL dialect -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		
+		<!-- Enable Hibernate's automatic session context management -->
+		<property name="current_session_context_class">thread</property>
+ 
+        <property name="hibernate.transaction.factory_class">
+                 org.hibernate.transaction.JDBCTransactionFactory</property>     
+		
+		<!-- Disable the second-level cache -->
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+		
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+		
+		<!-- Drop and re-create the database schema on startup -->
+		<property name="hbm2ddl.auto">update</property>
+	
+		<mapping resource="com/eolinc/hibernate/CdActy.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/CdAcvtyDetls.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/CdAsmntDetls.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/CdCollegeType.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/CdLearningObjective.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/CdLearningStyle.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/CdSubject.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/CdTopic.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/Goal.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/PrgmGoalsAcvtySched.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/PrgmGoalsAppldKnwlg.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/PrgmGoalsAsmntRmind.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/PrgmGoalsAsmntSched.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/PrgmGoalsGradeScale.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/PrgmGoalsLearningStyle.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/PrgmGoalsPrgmSched.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/PrgmGoalsRegistration.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/PrgmGoalsSkillSets.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/PrgmGoalsWorkHbits.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/ProfileDetails.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/Score.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/StudentActivityLog.hbm.xml"/>
+		<!--
+		<mapping resource="com/eolinc/hibernate/PrgmGoalsParentTrgt.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/StudentLearningStyle.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/PrgmGoalsRespondent.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/Profile.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/Student.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/Teacher.hbm.xml"/>
+		-->
+<mapping class="com.eolinc.dto.PrgmGoalsParentTrgt"/>
+<mapping class="com.eolinc.dto.Teacher"/>
+<mapping class="com.eolinc.dto.Student"/>
+<mapping class="com.eolinc.dto.Profile"/>
+<mapping class="com.eolinc.dto.StudentLearningStyle"/>
+<mapping class="com.eolinc.dto.PrgmGoalsRespondent"/>
+<mapping class="com.eolinc.dto.Profile"/>
+		<mapping resource="com/eolinc/hibernate/StudentParentPair.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/StudentResults.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/StudentTeacherPair.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/Subject.hbm.xml"/>
+		<mapping resource="com/eolinc/hibernate/Topic.hbm.xml"/>
+
+		
+	
+	</session-factory>
+</hibernate-configuration>

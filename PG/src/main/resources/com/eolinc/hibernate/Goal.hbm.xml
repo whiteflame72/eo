@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.Goal" table="goal">
+        <id name="goalId" type="long" column="GOAL_ID">
+            <generator class="native" />
+        </id>
+        <property name="studentId" type="long" column="STUDENT_ID" not-null="true" />
+        <property name="topicId" type="long" column="TOPIC_ID" not-null="true" />
+        <property name="goal" type="long" column="GOAL" />
+    </class>
+</hibernate-mapping>

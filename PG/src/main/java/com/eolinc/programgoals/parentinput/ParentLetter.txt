@@ -1,0 +1,31 @@
+**** Parent, enter your own message to your child's teacher here *****
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Education Online, Inc.
+(full heading, consistent with look and feel of the tutoring system website)
+
+Dear (name of teacher),
+
+This letter is to inform you that (name of student) has subscribed to an online tutoring system with Education Online, Inc. Information on Education Online is available at www.eollearning.com.
+
+EOL has received parental permission for the use of this system by the above student. Please feel free to contact the parent listed below for verification:
+
+(name of parent)
+(email address of parent)
+(phone number of parent)
+
+EOL believes that the classroom teacher is the primary expert in the education of the student and, therefore, values your input in this process. It is our goal to help every student achieve his or her educational goals and this includes meeting all the objectives and goals of your curriculum to the highest possible standards.
+
+The information you provide will assist the system in creating an individualized learning program for (name of student). Please click on the link below to fill out a brief form. It should take no more than 5-10 minutes.
+
+Thank you for your time and effort. Please feel free to contact us if you have any questions or concerns.
+
+(link to form)
+
+If the above link does not work, please copy it and paste it into the address window of your browser.
+
+Sincerely,
+John Leddo, PhD, Chief Executive Officer

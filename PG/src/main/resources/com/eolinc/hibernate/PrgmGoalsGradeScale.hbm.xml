@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.PrgmGoalsGradeScale" table="prgm_goals_grade_scale">
+       <id name="prgmGoalsGradeScaleId" type="long" column="PRGM_GOALS_GRADE_SCALE_ID">
+            <generator class="native" />
+       </id>
+       <property name="respondentId" type="long" column="RESPONDENT_ID" />
+       <property name="gradeScaleId" column="GRADE_SCALE_ID" />
+       <property name="gradeUpperBnd" type="big_decimal" column="GRADE_UPPER_BND" precision="4" not-null="true" />
+       <property name="gradeLowerBnd" type="big_decimal" column="GRADE_LOWER_BND" precision="4" not-null="true" />
+    </class>
+</hibernate-mapping>

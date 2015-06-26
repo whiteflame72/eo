@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="ProgramGoals" namespace="/" extends="struts-default">
+		<action name="welcome"
+			class="com.eolinc.programgoals.action.WelcomeAction">
+			<result name="success">jsp/welcome.jsp</result>
+			<result name="error">jsp/welcome.jsp</result>
+			<result name="parent_input_form" type="redirect-action">parent_input_form</result>
+			<result name="teacher_input_form" type="redirect-action">teacher_input_form</result>
+		</action>
+
+		<action name="parent_input_form"
+			class="com.eolinc.programgoals.action.ParentInputAction">
+			<result name="input">jsp/parent_input_form.jsp</result>
+			<result name="error">jsp/parent_input_form.jsp</result>
+			<result name="success">jsp/parent_input_form.jsp</result>
+			<result name="emailSent">jsp/email_thanks.jsp</result>
+			<result name="thanks">jsp/parent_input_thanks.jsp</result>
+		</action>
+
+		<action name="teacher_input_form"
+			class="com.eolinc.programgoals.action.TeacherInputAction">
+			<result name="input">jsp/teacher_input_form.jsp</result>
+			<result name="error">jsp/teacher_input_form.jsp</result>
+			<result name="success">jsp/teacher_input_form.jsp</result>
+			<result name="thanks">jsp/teacher_input_thanks.jsp</result>
+		</action>
+
+		<action name="parent_registration_form"
+			class="com.eolinc.programgoals.action.AccountCreationAction">
+			<result name="input">jsp/parent_registration_form.jsp</result>
+			<result name="error">jsp/parent_registration_form.jsp</result>
+			<result name="success">jsp/parent_input_form.jsp</result>
+		</action>
+
+		<action name="*"
+			class="com.eolinc.programgoals.teacherinput.TeacherParentInputSupport">
+			<result>jsp/{1}.jsp</result>
+		</action>
+
+	</package>
+	
+</struts>

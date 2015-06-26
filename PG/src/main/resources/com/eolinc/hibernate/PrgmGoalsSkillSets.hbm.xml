@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.PrgmGoalsSkillSets" table="prgm_goals_skill_sets">
+        <id name="PrgmGoalsSkillSetsId" type="long" column="RESPONDENT_ID">
+            <generator class="native" />
+        </id>
+        <property name="computationAccuracy" type="short" column="COMPUTATION_ACCURACY" not-null="true" />
+        <property name="calculatorUse" type="short" column="CALCULATOR_USE" not-null="true" />
+        <property name="retention" type="short" column="RETENTION" not-null="true" />
+        <property name="formulaSelection" type="short" column="FORMULA_SELECTION" not-null="true" />
+        <property name="abstractConceptGrasp" type="short" column="ABSTRACT_CONCEPT_GRASP" not-null="true" />
+        <property name="logicalThoughtProcess" type="short" column="LOGICAL_THOUGHT_PROCESS" not-null="true" />
+        <property name="lowProblemProficiency" type="short" column="LOW_PROBLEM_PROFICIENCY" not-null="true" />
+        <property name="medProblemProficiency" type="short" column="MED_PROBLEM_PROFICIENCY" not-null="true" />
+        <property name="hiProblemProficiency" type="short" column="HI_PROBLEM_PROFICIENCY" not-null="true" />
+        <property name="snglStepProblemSkill" type="short" column="SNGL_STEP_PROBLEM_SKILL" not-null="true" />
+        <property name="multStepProblemSkill" type="short" column="MULT_STEP_PROBLEM_SKILL" not-null="true" />
+
+    </class>
+</hibernate-mapping>

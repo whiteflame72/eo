@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+<!--
+	<package name="ProgramGoals" namespace="/" extends="struts-default">
+
+
+ 		<action name="parent_input_form_new" method="execute" 
+			class="com.eolinc.programgoals.ParentInputForm">
+			<result name="input">parent_input_form_new.jsp</result>
+			<result name="error">error.jsp</result>
+			<result name="success">parent_input_thanks.jsp</result>
+			<result name="redirect-action">parent_input_thanks</result>
+		</action>
+
+		<action name="parent_input_form" method="execute" 
+			class="com.eolinc.programgoals.action.ParentInputAction">
+			<result name="input">jsp/parent_input_form.jsp</result>
+			<result name="error">jsp/error.jsp</result>
+			<result name="success">jsp/parent_input_thanks.jsp</result>
+		</action>
+ 
+		<action name="parent_input_form_tmp" method="execute" 
+			class="com.eolinc.programgoals.action.ParentInputAction">
+			<result name="input">parent_input_form_tmp.jsp</result>
+			<result name="error">error.jsp</result>
+			<result name="success">parent_input_thanks.jsp</result>
+			<result name="redirect-action">parent_input_thanks</result>
+		</action>
+
+		<action name="teacher_input_form" method="execute" 
+			class="com.eolinc.programgoals.action.TeacherInputAction">
+			<result name="input">jsp/teacher_input_form.jsp</result>
+			<result name="error">jsp/error.jsp</result>
+			<result name="success">jsp/teacher_input_thanks.jsp</result>
+		</action>
+		
+		<action name="account_creation_form" method="execute" 
+			class="com.eolinc.programgoals.action.AccountCreationAction">
+			<result name="input">jsp/parent_registration_form.jsp</result>
+			<result name="error">jsp/error.jsp</result>
+			<result name="success">jsp/parent_input_form.jsp</result>
+		</action>
+		
+		<action name="*" class="com.eolinc.programgoals.teacherinput.TeacherInputSupport">
+			<result>jsp/{1}.jsp</result>
+		</action>
+		
+
+		
+	</package>
+	
+-->
+    <include file = "programgoals.xml"/>
+	
+	
+</struts>
+
+

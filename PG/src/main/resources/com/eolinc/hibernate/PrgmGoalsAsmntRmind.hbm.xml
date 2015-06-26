@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.PrgmGoalsAsmntRmind" table="prgm_goals_asmnt_rmind">
+        <id name="prgmGoalsAsmntRmindId" type="long" column="RESPONDENT_ID">
+            <generator class="native" />
+        </id>
+        <property name="asmntId" column="ASMNT_ID" length="1" />
+        <property name="rmindType" column="RMIND_TYPE" length="6" not-null="true" />
+        <property name="rmindEmailId" column="RMIND_EMAIL_ID" length="80" not-null="true" />
+    </class>
+</hibernate-mapping>

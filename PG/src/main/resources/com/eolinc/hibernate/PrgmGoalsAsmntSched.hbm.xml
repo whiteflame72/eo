@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.PrgmGoalsAsmntSched" table="prgm_goals_asmnt_sched">
+       <id name="prgmGoalsAsmntSchedId" type="long" column="PRGM_GOALS_ASMNT_SCHED_ID">
+            <generator class="native" />
+       </id>
+       <property name="respondentId" type="long" column="RESPONDENT_ID" />
+       <property name="asmntId" type="char" column="ASMNT_ID" length="1" />
+       <property name="asmntDt" type="date" column="ASMNT_DT" length="10" />
+       <property name="asmntDetlsId" type="long" column="ASMNT_DETLS_ID" />
+    </class>
+</hibernate-mapping>

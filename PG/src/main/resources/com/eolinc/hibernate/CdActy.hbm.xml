@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.eolinc.dto.CdActy" table="cd_acty">
+        <id name="cdActyId" type="long" column="ACTY_ID">
+            <generator class="native" />
+        </id>
+        <property name="actyName" column="ACTY_NAME" length="45"/>
+    </class>
+</hibernate-mapping>

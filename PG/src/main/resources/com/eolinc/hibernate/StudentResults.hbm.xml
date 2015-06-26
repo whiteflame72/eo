@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.StudentResults" table="student_results">
+         <id name="studentResultsId" type="long" column="STUDENT_RESULTS_ID">
+            <generator class="native" />
+        </id>
+        <property name="studentId" type="long" column="STUDENT_ID" />
+        <property name="subjectId" type="long" column="SUBJECT_ID" />
+        <property name="addedDt" type="date" column="ADDED_DT" length="10" />
+        <property name="activityId" type="long" column="ACTIVITY_ID" not-null="true" />
+        <property name="activityType" type="char" column="ACTIVITY_TYPE" length="1" not-null="true" />
+        <property name="problemId" type="long" column="PROBLEM_ID" />
+        <property name="startTm" type="time" column="START_TM" length="8" not-null="true" />
+        <property name="endTm" type="time" column="END_TM" length="8" not-null="true" />
+        <property name="prblmResult" column="PRBLM_RESULT" length="21" />
+        <property name="addedBy" column="ADDED_BY" length="20" not-null="true" />
+        <property name="updtDt" type="date" column="UPDT_DT" length="10" not-null="true" />
+        <property name="updtBy" column="UPDT_BY" length="20" not-null="true" />
+    </class>
+</hibernate-mapping>

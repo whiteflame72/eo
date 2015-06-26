@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.CdLearningObjective" table="cd_lrng_objective">
+        <id name="cdLearningObjectiveId" type="long" column="CD_LRNG_OBJECTIVE_ID" >
+            <generator class="assigned" />
+        </id>
+        <property name="name" column="NAME" length="45" not-null="true" />
+        <property name="topicId" type="long" column="TOPIC_ID" not-null="true" />
+    </class>
+</hibernate-mapping>

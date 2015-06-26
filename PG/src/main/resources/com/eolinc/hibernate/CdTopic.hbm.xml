@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.CdTopic" table="cd_topic">
+        <id name="cdTopicId" type="long" column="TOPIC_ID">
+            <generator class="native" />
+        </id>
+        <property name="topicName" column="TOPIC_NAME" length="45" not-null="true" />
+         <property name="subjectId" type="long" column="SUBJECT_ID" not-null="true" />
+     </class>
+</hibernate-mapping>

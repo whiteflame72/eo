@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.PrgmGoalsRegistration" table="prgm_goals_registration">
+        <id name="prgmGoalsRegistrationId" type="long" column="REGISTRATION_ID">
+            <generator class="native" />
+        </id>
+        <property name="parentName" column="PARENT_NAME" />
+        <property name="studentName" column="STUDENT_NAME" />
+        <property name="parentAddress1" column="PARENT_ADDRESS1" />
+        <property name="parentAddress2" column="PARENT_ADDRESS2" />
+        <property name="studentAddress1" column="STUDENT_ADDRESS1" />
+        <property name="studentAddress2" column="STUDENT_ADDRESS2" />
+        <property name="parentCountry" column="PARENT_COUNTRY" />
+        <property name="parentZip" column="PARENT_ZIP" />
+        <property name="studentZip" column="STUDENT_ZIP" />
+        <property name="parentPhone" column="PARENT_PHONE" />
+        <property name="studentPhone" column="STUDENT_PHONE" />
+        <property name="password" column="PASSWORD" />
+
+        <property name="addedDt" type="date" column="ADDED_DT" length="10" not-null="true" />
+        <property name="addedBy" column="ADDED_BY" length="20" not-null="true" />
+        <property name="updtDt" type="date" column="UPDT_DT" length="10" not-null="true" />
+        <property name="updtBy" column="UPDT_BY" length="20" not-null="true" />
+ 
+    </class>
+</hibernate-mapping>

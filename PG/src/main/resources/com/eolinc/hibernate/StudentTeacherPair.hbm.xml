@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.StudentTeacherPair" table="student_teacher_pair">
+        <id name="studentTeacherPairId" type="long" column="STUDENT_TEACHER_PAIR_ID">
+            <generator class="native" />
+        </id>
+        <property name="studentId" type="long" column="STUDENT_ID" />
+        <property name="teacherId" type="long" column="TEACHER_ID" />
+        <property name="subjectId" type="long" column="SUBJECT_ID" />
+        <property name="addedDt" type="date" column="ADDED_DT" length="10" not-null="true" />
+        <property name="addedBy" column="ADDED_BY" length="20" not-null="true" />
+        <property name="updtDt" type="date" column="UPDT_DT" length="10" not-null="true" />
+        <property name="updtBy" column="UPDT_BY" length="20" not-null="true" />
+    </class>
+</hibernate-mapping>

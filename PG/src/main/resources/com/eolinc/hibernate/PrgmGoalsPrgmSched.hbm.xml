@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.PrgmGoalsPrgmSched" table="prgm_goals_prgm_sched">
+		<id name="prgmGoalsPrgmSchedId" type="long" column="PRGM_GOALS_PRGM_SCHED_ID">
+<!--         <id name="prgmGoalsPrgmSchedId" type="long" column="PRGM_GOALS_PRGM_SCHED_ID">
+            <generator class="native" /> -->
+        </id> 
+		<property name="respondentId" type="long" column="RESPONDENT_ID" />
+<!--    <property name="prgmGoalsPrgmSchedId" type="long" column="PRGM_GOALS_PRGM_SCHED_ID" />-->
+        <property name="subjectId" type="long" column="SUBJECT_ID" />
+        <property name="schedDay" column="SCHED_DAY" length="4" />
+        <property name="schedBgnTm" type="time" column="SCHED_BGN_TM" length="8" />
+        <property name="schedLevel" column="SCHED_LEVEL" length="2" />
+        <property name="schedEndTm" type="time" column="SCHED_END_TM" length="8" not-null="true" />
+ 
+    </class>
+</hibernate-mapping>

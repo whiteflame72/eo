@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.PrgmGoalsLearningStyle" table="prgm_goals_lrng_styl">
+        <id name="prgmGoalsLearningStyleId" type="long" column="RESPONDENT_ID">
+            <generator class="assigned" />
+        </id>
+        <property name="anyStyle" type="short" column="ANY_STYLE" not-null="true" />
+        <property name="realWorldExamples" type="short" column="REAL_WORLD_EXAMPLES" not-null="true" />
+        <property name="simplerExplanations" type="short" column="SIMPLER_EXPLANATIONS" not-null="true" />
+        <property name="visual" type="short" column="VISUAL" not-null="true" />
+        <property name="auditory" type="short" column="AUDITORY" not-null="true" />
+        <property name="handsOn" type="short" column="`HANDS-ON`" not-null="true" />
+        <property name="deductive" type="short" column="DEDUCTIVE" not-null="true" />
+        <property name="inductive" type="short" column="INDUCTIVE" not-null="true" />
+
+    </class>
+</hibernate-mapping>

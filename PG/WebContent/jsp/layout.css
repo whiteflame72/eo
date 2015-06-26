@@ -1,0 +1,19 @@
+/*======= index.html =======*/
+
+#page1 .line-ver {background-position: 231px 0%;}
+#page1 .col-1 {width: 201px; padding: 3px 29px 0 2px;}
+#page1 .col-2 {width: 600px; padding: 19px 0 0 31px;}
+#page1 .two-blocks .left-block {width: 284px; padding: 0 2px 0 0;}
+#page1 .two-blocks .right-block {width: 306px; padding: 0 1px 0 0;}
+
+/*======= index-1.html =======*/
+
+#page2 .line-ver {background-position: 231px 0%;}
+#page2 .col-1 {width: 201px; padding: 3px 29px 0 2px;}
+#page2 .col-2 {width: 600px; padding: 19px 0 0 31px;}
+#page2 .two-blocks .left-block {width: 284px; padding: 0 2px 0 0;}
+#page2 .two-blocks .right-block {width: 306px; padding: 0 1px 0 0;}
+
+/*======= index-2.html =======*/
+
+#page3 .col-1 {padding: 19px 0 0 3px;}

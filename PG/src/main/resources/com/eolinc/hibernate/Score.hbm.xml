@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.Score" table="score">
+        <id name="scoreId" type="long" column="SCORE_ID" >
+            <generator class="native" />
+        </id>
+        <property name="studentId" type="long" column="STUDENT_ID" not-null="true" />
+        <property name="topicId" type="long" column="TOPIC_ID" not-null="true" />
+        <property name="score" type="long" column="SCORE" />
+        <property name="timestamp" type="timestamp" column="TIMESTAMP" length="19" not-null="true" />
+    </class>
+</hibernate-mapping>

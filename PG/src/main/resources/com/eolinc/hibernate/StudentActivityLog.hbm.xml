@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.StudentActivityLog" table="student_activity_log">
+        <id name="studentActivityLogId" type="long" column="STUDENT_ACTIVITY_LOG_ID" >
+            <generator class="native" />
+        </id>
+        <property name="studentId" type="long" column="STUDENT_ID" not-null="true" />
+        <property name="startTm" type="time" column="START_TM" length="8" not-null="true" />
+        <property name="endTm" type="time" column="END_TM" length="8" not-null="true" />
+        <property name="activityId" type="long" column="ACTIVITY_ID" not-null="true" />
+        <property name="activityType" type="char" column="ACTIVITY_TYPE" length="1" not-null="true" />
+        <property name="subjectId" type="long" column="SUBJECT_ID" not-null="true" />
+        <property name="topicId" type="long" column="TOPIC_ID" not-null="true" />
+        <property name="lrnObjId" type="long" column="LRN_OBJ_ID" not-null="true" />
+        <property name="sessionId" type="long" column="SESSION_ID" not-null="true" />
+        <property name="prblmDesc" column="PRBLM_DESC" length="65535" />
+        <property name="answrDesc" column="ANSWR_DESC" length="65535" />
+        <property name="indicator" column="INDICATOR" length="4" not-null="true" />
+        <property name="otherId" type="long" column="OTHER_ID" not-null="true" />
+        <property name="prblmResult" column="PRBLM_RESULT" length="21" />
+        <property name="addedDt" type="date" column="ADDED_DT" length="10" not-null="true" />
+        <property name="addedBy" column="ADDED_BY" length="20" not-null="true" />
+    </class>
+</hibernate-mapping>

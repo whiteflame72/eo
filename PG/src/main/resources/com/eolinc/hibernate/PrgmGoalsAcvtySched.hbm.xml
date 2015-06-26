@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eolinc.dto.PrgmGoalsAcvtySched" table="prgm_goals_acvty_sched">
+        <id name="prgmGoalsAcvtySchedId" type="long" column="PRGM_GOALS_ACVTY_SCHED_ID">
+            <generator class="assigned" />
+        </id>  
+        <property name="respondentId" type="long" column="RESPONDENT_ID" />
+        <!-- <property name="prgmGoalsAcvtySchedId" type="long" column="PRGM_GOALS_ACVTY_SCHED_ID" /> -->
+        <property name="asmntId" type="char" column="ASMNT_ID" length="1" />
+        <property name="acvtyDt" type="date" column="ACVTY_DT" length="10" />
+        <property name="acvtyDetlsId" type="long" column="ACVTY_DETLS_ID" />
+    </class>
+</hibernate-mapping>
